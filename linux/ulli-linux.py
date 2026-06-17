@@ -706,7 +706,7 @@ class InstallerWindow(Gtk.ApplicationWindow):
         .strategy-btrfs { background-color: #1a3040; color: #5bc8f5; }
         .strategy-none  { background-color: #2a2a2a; color: #888888; }
         .btn-browse { color: #4a7222; }
-        .btn-browse label { color: #ffffff; }
+        .btn-browse label { color: #e8e8e8; }
         filechooser, filechooser * { color: #000000; background-color: #ffffff; }
         filechooser entry { color: #000000; background-color: #ffffff; }
         filechooser treeview { color: #000000; background-color: #ffffff; }
