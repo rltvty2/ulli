@@ -615,6 +615,9 @@ class InstallerWindow(Gtk.ApplicationWindow):
         self.running = False
         self.cancel_restart = False
 
+        settings = Gtk.Settings.get_default()
+        settings.props.gtk_application_prefer_dark_theme = True
+
         self._apply_css()
         self._build_ui()
         self.show_all()
@@ -662,8 +665,8 @@ class InstallerWindow(Gtk.ApplicationWindow):
             font-family: 'IBM Plex Mono', monospace;
             font-size: 12px; color: #000000;
         }
-        .distro-radio * { color: #000000; }
-        .distro-radio cellview { color: #000000; }
+        .distro-radio * { color: #87b94a; }
+        .distro-radio cellview { color: #87b94a; }
         .distro-radio:checked { color: #87b94a; }
         .custom-iso-check {
             font-family: 'IBM Plex Mono', monospace;
@@ -702,8 +705,8 @@ class InstallerWindow(Gtk.ApplicationWindow):
         }
         .strategy-btrfs { background-color: #1a3040; color: #5bc8f5; }
         .strategy-none  { background-color: #2a2a2a; color: #888888; }
-        .btn-browse { color: #000000; }
-        .btn-browse label { color: #000000; }
+        .btn-browse { color: #4a7222; }
+        .btn-browse label { color: #e8e8e8; }
         filechooser, filechooser * { color: #000000; background-color: #ffffff; }
         filechooser entry { color: #000000; background-color: #ffffff; }
         filechooser treeview { color: #000000; background-color: #ffffff; }
